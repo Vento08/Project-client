@@ -62,6 +62,7 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label8;
 
 	private:
 		/// <summary>
@@ -76,6 +77,7 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm7::typeid));
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -87,41 +89,47 @@ namespace Project1 {
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(370, 353);
+			this->button1->BackColor = System::Drawing::Color::Aqua;
+			this->button1->Location = System::Drawing::Point(353, 408);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Выход";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm7::button1_Click);
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(236, 353);
+			this->button2->BackColor = System::Drawing::Color::DarkCyan;
+			this->button2->Location = System::Drawing::Point(219, 408);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 23);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"В меню";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm7::button2_Click);
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(111, 353);
+			this->button3->BackColor = System::Drawing::Color::PaleTurquoise;
+			this->button3->Location = System::Drawing::Point(94, 408);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 23);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Рассчитать";
-			this->button3->UseVisualStyleBackColor = true;
+			this->button3->UseVisualStyleBackColor = false;
 			// 
 			// listBox1
 			// 
+			this->listBox1->BackColor = System::Drawing::Color::Turquoise;
+			this->listBox1->ForeColor = System::Drawing::SystemColors::InfoText;
 			this->listBox1->FormattingEnabled = true;
-			this->listBox1->Location = System::Drawing::Point(48, 48);
+			this->listBox1->Location = System::Drawing::Point(89, 99);
 			this->listBox1->Name = L"listBox1";
 			this->listBox1->Size = System::Drawing::Size(120, 95);
 			this->listBox1->TabIndex = 3;
@@ -130,7 +138,8 @@ namespace Project1 {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(233, 48);
+			this->label1->BackColor = System::Drawing::Color::CornflowerBlue;
+			this->label1->Location = System::Drawing::Point(274, 73);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(60, 13);
 			this->label1->TabIndex = 4;
@@ -139,7 +148,8 @@ namespace Project1 {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(233, 84);
+			this->label2->BackColor = System::Drawing::Color::LightSkyBlue;
+			this->label2->Location = System::Drawing::Point(274, 135);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(41, 13);
 			this->label2->TabIndex = 5;
@@ -148,7 +158,8 @@ namespace Project1 {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(233, 130);
+			this->label3->BackColor = System::Drawing::Color::LightSkyBlue;
+			this->label3->Location = System::Drawing::Point(274, 181);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(41, 13);
 			this->label3->TabIndex = 6;
@@ -157,7 +168,8 @@ namespace Project1 {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(233, 169);
+			this->label4->BackColor = System::Drawing::Color::DeepSkyBlue;
+			this->label4->Location = System::Drawing::Point(274, 220);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(61, 13);
 			this->label4->TabIndex = 7;
@@ -166,7 +178,8 @@ namespace Project1 {
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(45, 23);
+			this->label5->BackColor = System::Drawing::Color::CornflowerBlue;
+			this->label5->Location = System::Drawing::Point(86, 74);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(102, 13);
 			this->label5->TabIndex = 8;
@@ -175,7 +188,7 @@ namespace Project1 {
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(236, 22);
+			this->label6->Location = System::Drawing::Point(277, 73);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(0, 13);
 			this->label6->TabIndex = 9;
@@ -183,17 +196,30 @@ namespace Project1 {
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(236, 202);
+			this->label7->BackColor = System::Drawing::Color::DeepSkyBlue;
+			this->label7->Location = System::Drawing::Point(274, 251);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(53, 13);
 			this->label7->TabIndex = 10;
 			this->label7->Text = L"Калории:";
 			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->BackColor = System::Drawing::Color::RoyalBlue;
+			this->label8->Location = System::Drawing::Point(274, 99);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(139, 13);
+			this->label8->TabIndex = 11;
+			this->label8->Text = L"Состав на 100 г продукта:";
+			// 
 			// MyForm7
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(468, 397);
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->ClientSize = System::Drawing::Size(534, 471);
+			this->Controls->Add(this->label8);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
@@ -206,6 +232,7 @@ namespace Project1 {
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Name = L"MyForm7";
+			this->ShowIcon = false;
 			this->Text = L"БЖУ состав различных продуктов.";
 			this->ResumeLayout(false);
 			this->PerformLayout();
